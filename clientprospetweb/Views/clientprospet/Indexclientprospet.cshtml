@@ -1,0 +1,112 @@
+﻿@model IEnumerable<clientprospetweb.models.Dto.clientprospetDTO>
+<br />
+<div class="container p-4 border">
+    <div class="row pb-2">
+        <div class="col">
+            <h1 class="text-primary">ClientProspet List</h1>
+        </div>
+        <div class="col text-end pt-1">
+            <a asp-controller="clientprospet" asp-action="CreateClientProspet" class="btn btn-outline-primary"><i class="bi bi-plus-square-fill"></i>Create New ClientProspet</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nom
+                </th>
+                <th>
+                    Prenom
+                </th>
+                <th>
+                    Mobile
+                </th>
+                @* <th>
+                    Email
+                </th>
+                <th>
+                    PaysDeNaissance
+                </th>
+                <th>
+                    DateDeNaissance
+                </th>
+                <th>
+                    Motif
+                </th>
+                <th>
+                    Nationalite
+                </th>
+                <th>
+                    pk_ad
+                </th>
+                <th>
+                    Revenu
+                </th>
+                <th>
+                    Fonction
+                </th>
+                <th>
+                    NumeroDeLaBanque
+                </th>
+                <th>
+                    Etat
+                </th>
+                <th>
+                    NumeroDeCompte
+                </th> *@
+                @*  <th>
+                Gouvernorat
+                </th>
+                <th>
+                Ville
+                </th>
+                <th>
+                CodePostal
+                </th>
+                <th>
+                Numéro
+                </th>
+                <th>
+                Rue
+                </th>
+                <th>
+                Résidence
+                </th> *@
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nom</td>
+                    <td>@item.Prenom</td>
+                    <td>@item.Mobile</td>
+                    @* <td>@item.Email</td>
+                    <td>@item.PaysDeNaissance</td>
+                    <td>@item.DateDeNaissance</td>
+                    <td>@item.Motif</td>
+                    <td>@item.Nationalite</td>
+                    <td>@item.pk_ad</td>
+                    <td>@item.Revenu</td>
+                    <td>@item.Fonction</td>
+                    <td>@item.NumeroDeLaBanque</td>
+                    <td>@item.Etat</td>
+                    <td>@item.NumeroDeCompte</td> *@
+                    @*  <td>@item.Gouvernorat</td>
+                <td>@item.Ville</td>
+                <td>@item.CodePostal</td>
+                <td>@item.Numéro</td>
+                <td>@item.Rue</td>
+                <td>@item.Résidence</td> *@
+                    <td>
+                        <a asp-controller="clientprospet" asp-action="UpdateClientProspet" asp-route-clientpropspetId="@item.Id_client" class="btn btn-success"><i class="bi bi-pencil-square"></i></a>
+
+                        <a asp-controller="clientprospet" asp-action="DeleteClientProspet" asp-route-clientpropspetId="@item.Id_client" class="btn btn-danger"><i class="bi bi-trash-fill"></i></a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div> 

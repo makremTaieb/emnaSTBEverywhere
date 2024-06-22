@@ -1,0 +1,171 @@
+﻿@model clientprospetweb.models.Dto.clientprospetUpdateDTO
+<form asp-action="Updateclientprospet">
+    <br />
+    <div class="container border p-3">
+        <h1 class="text-primary">Update ClientProspet</h1>
+        <hr />
+
+        <input hidden asp-for="Id_client" />
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="col-2">
+                <label asp-for="Nom" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Nom" class="form-control" />
+                <span asp-validation-for="Nom" class="text-danger"></span>
+            </div>
+
+
+            <div class="col-2">
+                <label asp-for="Prenom" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Prenom" class="form-control" />
+                <span asp-validation-for="Prenom" class="text-danger"></span>
+            </div>
+
+
+            <div class="col-2">
+                <label asp-for="Mobile" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Mobile" class="form-control" />
+                <span asp-validation-for="Mobile" class="text-danger"></span>
+            </div>
+
+
+            <div class="col-2">
+                <label asp-for="Email" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="PaysDeNaissance" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="PaysDeNaissance" class="form-control" />
+                <span asp-validation-for="PaysDeNaissance" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="DateDeNaissance" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="DateDeNaissance" class="form-control" />
+                <span asp-validation-for="DateDeNaissance" class="text-danger"></span>
+            </div>
+
+            <div class="col-2">
+                <label asp-for="Motif" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Motif" class="form-control" />
+                <span asp-validation-for="Motif" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Nationalite" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Nationalite" class="form-control" />
+                <span asp-validation-for="Nationalite" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="pk_ad" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="pk_ad" class="form-control" />
+                <span asp-validation-for="pk_ad" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Revenu" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Revenu" class="form-control" />
+                <span asp-validation-for="Revenu" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Fonction" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Fonction" class="form-control" />
+                <span asp-validation-for="Fonction" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="NumeroDeLaBanque" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="NumeroDeLaBanque" class="form-control" />
+                <span asp-validation-for="NumeroDeLaBanque" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Etat" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Etat" class="form-control" />
+                <span asp-validation-for="Etat" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="NumeroDeCompte" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="NumeroDeCompte" class="form-control" />
+                <span asp-validation-for="NumeroDeCompte" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Gouvernorat" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Gouvernorat" class="form-control" />
+                <span asp-validation-for="Gouvernorat" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Ville" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Ville" class="form-control" />
+                <span asp-validation-for="Ville" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="CodePostal" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="CodePostal" class="form-control" />
+                <span asp-validation-for="CodePostal" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Numéro" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Numéro" class="form-control" />
+                <span asp-validation-for="Numéro" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Rue" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Rue" class="form-control" />
+                <span asp-validation-for="Rue" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Résidence" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Résidence" class="form-control" />
+                <span asp-validation-for="Résidence" class="text-danger"></span>
+            </div>
+            <div class="col-5 offset-2">
+                <a asp-action="Indexclientprospet" asp-controller="clientprospet" class="btn-primary btn form-control">Back to List</a>
+            </div>
+            <div class="col-5">
+                <input type="submit" value="Update" class="btn btn-success form-control" />
+            </div>
+        </div>
+
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
